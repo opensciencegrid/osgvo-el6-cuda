@@ -1,4 +1,4 @@
-from nvidia/8.0-cudnn6-devel-centos6
+from nvidia/cuda:8.0-cudnn6-devel-centos6
 MAINTAINER Edgar Fajardo "emfajard@ucsd.edu"
 
 ADD environment /environment
