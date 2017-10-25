@@ -1,14 +1,6 @@
 from nvidia/cuda:8.0-cudnn6-devel-centos6
 MAINTAINER Edgar Fajardo "emfajard@ucsd.edu"
 
-ADD environment /environment
-ADD exec        /.exec
-ADD run         /.run
-ADD shell       /.shell
-
-RUN chmod 755 .exec .run .shell
-
-
 RUN yum -y upgrade
 RUN yum -y install epel-release yum-plugin-priorities
 
