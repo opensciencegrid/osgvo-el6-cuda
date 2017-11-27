@@ -1,4 +1,4 @@
-from nvidia/cuda:9.0-devel-centos6
+from nvidia/cuda:8.0-devel-centos6
 MAINTAINER Edgar Fajardo "emfajard@ucsd.edu"
 
 ADD environment /environment
@@ -94,6 +94,7 @@ RUN yum -y install pegasus
 
 # required directories
 RUN mkdir -p /cvmfs
+RUN mkdir -p /etc/OpenCL/vendors
 
 # verification
 RUN ls -l /etc/grid-security/
